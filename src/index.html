@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random excuse generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,18 +12,23 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+  <body class="bg-danger">
+    <div class="centered-image">
+      <img src="" id="img" />
     </div>
+    <div class="container-fluid text-center">
+      <h1 class="mt-5">OMG you're not going to believe me but...</h1>
+      <h1 id="excuse" class="mt-5">a shark set fire to my house!</h1>
+
+      <img
+        id="pics"
+        src="https://cdn.pixabay.com/photo/2016/04/01/09/29/cartoon-1299393_640.png?w-5"
+        alt="picture error"
+      />
+      <button type="button" id="btn" class="btn btn-secondary">
+        Click to generate a new excuse!
+      </button>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
